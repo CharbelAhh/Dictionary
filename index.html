@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dictionary</title>
+    <meta name="author" content="Charbel Y.">
+    <meta name="description" content="Oxford dictionary from ali express!">
+    <meta name="author" content="Charbel Y.">
+
+    <title>Char Dictionary</title>
 
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="assets/book-solid.svg">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src=https://kit.fontawesome.com/4b8995fc18.js crossorigin=anonymous></script>
@@ -16,10 +22,21 @@
     <div id="main">
         <header class="header bg-white shadow p-3 d-flex flex-row align-items-center text-center justify-content-evenly">
             <div class="title">
-                <h1><i class="fa fa-book"></i> Dictionary</h1>
+                <h1><i class="fa fa-book"></i> Char Dictionary</h1>
             </div>
-            <button id="add">Add Entry</button>
-        </header>    
+        </header>
+
+        <main class="container p-3 d-flex flex-column h-100 justify-content-center gap-5">
+            <div class="search container w-50 p-0 shadow d-flex align-items-center justify-content-center">
+                <label for="word-search" class="fa fa-search fs-5 p-3"></label>
+                <input id="word-search" placeholder="Search for more words..." class="form-control w-100 p-3" type="search">
+            </div>
+            <div id="rand-words" class="container row row-cols-auto row-cols-sm-3 gap-3 text-center justify-content-center align-items-center">
+                
+            </div>
+        </main>
+        
+        <footer class="text-center fw-bold p-3 shadow">Copyright &copy; <a target="_blank" href="http://charbeldev.epizy.com">Charbel.Y</a> 2022</footer>
     </div>
     <script src="assets/scripts/script.js"></script>
 </body>

@@ -4,3 +4,27 @@
 
     font-family: Arial, Helvetica, sans-serif;
 }
+
+main .search #word-search{
+    border:none;
+}
+
+main #rand-words.row .col{
+    background-color:white;
+    padding:20px;
+    border-radius: 1rem;
+
+    cursor: pointer;
+    transition: .3s ease;
+}
+@media (max-width:800px){
+    main #rand-words.row .col{
+        width:100%;
+    }
+    main .search {
+        width:100% !important;
+    }
+}
+main #rand-words.row .col:hover{
+    background:rgb(240,240,240);
+}
